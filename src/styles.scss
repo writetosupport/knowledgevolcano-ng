@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+// tags present blog card photo
+a.ui.tag.label {
+  margin-bottom: 20px;
+}
+
+.link {
+  .ui.card {
+    margin: 8px;
+    font-family: 'Barrio', cursive;
+    font-family: 'Gugi', cursive;
+    font-family: 'Zilla Slab Highlight', cursive;
+  }
+}
+
+.ui.segment {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.ui.dimmer {
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+.kv-blog-first-para {
+
+  .para-first-letter {
+    font-size: 45px;
+    font-family: 'Gugi', cursive;
+  }
+}
+.icon, .ui.horizontal.divider{
+  color:#db2828; 
+}

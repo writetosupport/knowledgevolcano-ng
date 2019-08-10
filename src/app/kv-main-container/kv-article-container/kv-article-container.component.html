@@ -1,0 +1,46 @@
+<!-- <img class="ui fluid image" src="assets/img/{{kvConstants.kv_banner_header_img_url}}"> -->
+<div class="ui segment">
+  <div class="ui active dimmer">
+    <div class="content">
+      <h1 class="ui inverted icon header">
+        <i class="heart icon"></i>{{articleData.kv_article_heading}}
+        <div class="sub header">{{articleData.kv_article_sub_heading}}</div>
+      </h1>
+    </div>
+  </div>
+  <img class="ui fluid image" style="max-height: 350px; width: auto; margin: auto;" src="assets/img/{{articleData.kv_article_img_url}}">
+</div>
+<!-- <img class="ui small circular image" style="position: absolute; bottom: 212px; right: 40px;" src="assets/img/banner_owner.jpg"> -->
+<!-- <h4 class="ui horizontal divider header">
+  <i class="tag icon"></i>
+  Articles
+</h4> -->
+
+<div class="ui two column centered grid">
+  <div class="column">
+    <div class="ui segment">
+      <div class="ui left attached rail">
+        <!-- for advertisement -->
+        <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
+        <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
+      </div>
+      <div class="ui right attached rail">
+        <!-- for advertisement -->
+        <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
+        <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
+        <div class="ui secondary vertical pointing menu" style="position: sticky; top: 75px; margin-top: 110px;">
+          <a class="item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item active">
+            Friends
+          </a>
+        </div>
+      </div>
+      <app-kv-article-page></app-kv-article-page>
+    </div>
+  </div>
+</div>
