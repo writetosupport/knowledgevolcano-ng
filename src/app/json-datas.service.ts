@@ -14,8 +14,6 @@ export class JsonDatasService {
 
   constructor(private httpService: HttpClient) { }
 
-  arrBirds: string [];
-
   getBirdsData () {
     return this.httpService.get('./assets/blogs.json');
   }

@@ -9,7 +9,7 @@ import { JsonDatasService } from '../../../../json-datas.service';
 })
 export class KvArticlePageContentComponent implements OnInit {
   
-  articleData
+  articleData;
   
   constructor(private jsonDatasService: JsonDatasService){
     jsonDatasService.getArticleData()

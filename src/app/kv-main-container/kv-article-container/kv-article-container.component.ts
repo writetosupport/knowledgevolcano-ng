@@ -9,6 +9,7 @@ import { JsonDatasService } from '../../json-datas.service';
 })
 export class KvArticleContainerComponent implements OnInit {
 
+  constantData;
   articleData;
 
   constructor(private jsonDatasService: JsonDatasService){
@@ -21,7 +22,6 @@ export class KvArticleContainerComponent implements OnInit {
       (error) => console.log(error)
     );
    }
-
 
   ngOnInit() {
   }
