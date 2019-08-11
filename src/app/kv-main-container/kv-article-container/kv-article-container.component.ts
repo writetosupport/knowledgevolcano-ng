@@ -9,19 +9,17 @@ import { JsonDatasService } from '../../json-datas.service';
 })
 export class KvArticleContainerComponent implements OnInit {
 
-  constantData;
-  articleData;
+  articleContainerData;
 
-  constructor(private jsonDatasService: JsonDatasService){
+  constructor(private jsonDatasService: JsonDatasService) {
     jsonDatasService.getArticleData()
-    .subscribe(
-      (response) => {
-        this.articleData = response;
-        console.log(response);  
-      },
-      (error) => console.log(error)
-    );
-   }
+      .subscribe(
+        (response) => {
+          this.articleContainerData = response;
+        },
+        (error) => console.log(error)
+      );
+  }
 
   ngOnInit() {
   }

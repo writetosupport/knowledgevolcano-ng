@@ -1,6 +1,8 @@
 {
-  "kv_brand_logo": "",
+  "kv_brand_logo_name": "Filter Tags",
+  "kv_brand_logo_color": "red",
   "kv_banner_header_img_url": "banner.jpg",
   "kv_menu_contact": "",
-  "kv_toolbar_item": ["HTML","Angular","Others"]
+  "kv_toolbar_item": ["HTML","Angular","Others"],
+  "router_link_url": ["blogs","article",""]
 }

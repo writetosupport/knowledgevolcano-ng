@@ -9,14 +9,13 @@ import { JsonDatasService } from '../json-datas.service';
 })
 export class KvHeaderComponent implements OnInit {
 
-  kvConstants;
+  constants;
 
   constructor(private jsonDatasService: JsonDatasService) { 
     jsonDatasService.getConstantData()
     .subscribe(
       (response) => {
-        this.kvConstants = response;
-        console.log(response);  
+        this.constants = response;
       },
       (error) => console.log(error)
     );

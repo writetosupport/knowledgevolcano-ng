@@ -29,6 +29,16 @@ a.ui.tag.label {
     font-family: 'Gugi', cursive;
   }
 }
-.icon, .ui.horizontal.divider{
-  color:#db2828; 
+
+.icon,
+.ui.horizontal.divider {
+  color: #db2828;
+}
+
+.ui.segments, h3.ui.block.header {
+  margin-top: 5px;
+}
+
+h3.ui.header,.ui.header {
+  margin-bottom: 5px;
 }

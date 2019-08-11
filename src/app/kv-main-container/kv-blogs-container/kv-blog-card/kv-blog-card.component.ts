@@ -16,7 +16,6 @@ export class KvBlogCardComponent implements OnInit {
     .subscribe(
       (response) => {
         this.blogCardDetails = response;
-        console.log(response);  
       },
       (error) => console.log(error)
     );

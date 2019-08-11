@@ -9,14 +9,14 @@ import { JsonDatasService } from '../../../json-datas.service';
 })
 export class KvArticlePageComponent implements OnInit {
 
-  articleData;
+  articlePageData;
 
   constructor(private jsonDatasService: JsonDatasService){
     jsonDatasService.getArticleData()
     .subscribe(
       (response) => {
-        this.articleData = response;
-        console.log(response);  
+        this.articlePageData = response;
+        console.log(this.articlePageData);
       },
       (error) => console.log(error)
     );

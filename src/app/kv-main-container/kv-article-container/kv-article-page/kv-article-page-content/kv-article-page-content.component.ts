@@ -16,7 +16,6 @@ export class KvArticlePageContentComponent implements OnInit {
     .subscribe(
       (response) => {
         this.articleData = response;
-        console.log(response);  
       },
       (error) => console.log(error)
     );

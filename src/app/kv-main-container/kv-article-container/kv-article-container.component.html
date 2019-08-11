@@ -1,40 +1,127 @@
-<div class="ui segment">
-  <div class="ui active dimmer">
-    <div class="content">
-      <h1 class="ui inverted icon header">
-        Chitorgarh Fort
-        <div class="sub header">Chittorgarh</div>
-      </h1>
+<div *ngFor="let articleData of articleContainerData">
+  <div class="ui segment" style="padding:0px;">
+    <div class="ui active dimmer">
+      <div class="content">
+        <h1 class="ui inverted icon header">
+          {{articleData.kv_article_heading}}
+          <div class="sub header">{{articleData.kv_article_sub_heading}}</div>
+        </h1>
+      </div>
     </div>
+    <img class="ui fluid image" style="max-height: 350px; width: auto; margin: auto;"
+      src="assets/img/{{articleData.kv_article_img_url}}">
   </div>
-  <img class="ui fluid image" style="max-height: 350px; width: auto; margin: auto;" src="assets/img/banner.jpg">
-</div>
-
-<div class="ui two column centered grid">
-  <div class="column">
-    <div class="ui segment">
-      <div class="ui left attached rail">
-        <!-- for advertisement -->
-        <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
-        <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
-      </div>
-      <div class="ui right attached rail">
-        <!-- for advertisement -->
-        <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
-        <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
-        <div class="ui secondary vertical pointing menu" style="position: sticky; top: 75px; margin-top: 110px;">
-          <a class="item">
-            Home
-          </a>
-          <a class="item">
-            Messages
-          </a>
-          <a class="item active">
-            Friends
-          </a>
+  <div class="ui two column centered grid">
+    <div class="column">
+      <div class="ui segment">
+        <div class="ui left attached rail">
+          <div class="ui vertical icon menu" style="position: sticky; top: 75px; margin-top: 110px;">
+            <a class="item">
+              <i class="gamepad icon"></i>
+            </a>
+            <a class="item">
+              <i class="video camera icon"></i>
+            </a>
+            <a class="item">
+              <i class="video play icon"></i>
+            </a>
+          </div>
+          <!-- for advertisement -->
+          <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
+              <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
         </div>
+        <div class="ui right attached rail">
+          <!-- for advertisement -->
+          <!-- <div class="ui medium rectangle test ad" data-text="Ad Unit 1"></div>
+              <div class="ui medium rectangle test ad" data-text="Ad Unit 2"></div> -->
+          <div class="ui secondary vertical pointing menu" style="position: sticky; top: 75px; margin-top: 110px;">
+            <a class="item">
+              Home
+            </a>
+            <a class="item">
+              Messages
+            </a>
+            <a class="item active">
+              Friends
+            </a>
+          </div>
+        </div>
+        <a class="ui tag {{articleData.kv_article_tag_color}} label"
+          style="margin-bottom: 0px;">{{articleData.kv_article_tag}}</a>
+        <h4 class="ui horizontal divider header">
+          <i class="tag icon"></i>
+          {{articleData.kv_article_divider_header_start}}
+        </h4>
+        <div class="ui hidden divider"></div>
+        <img class="ui fluid bordered rounded image" src="assets/img/{{articleData.kv_article_first_para_img_url}}">
+        <div class="ui hidden divider"></div>
+        <p class="kv-blog-first-para">
+          <span
+            class="para-first-letter">{{articleData.kv_article_first_para_first_char}}</span>{{articleData.kv_article_first_para_description}}
+        </p>
+        <h2 class="ui header">
+          Visapur Details
+          <div class="sub header">Visapur</div>
+        </h2>
+        <p>{{articleData.kv_article_first_para_description}}</p>
+        <div class="ui segments">
+          <div class="ui tall stacked segment">
+            <p>{{articleData.kv_article_first_gray_container}}</p>
+          </div>
+        </div>
+        <div class="ui block header">
+          {{articleData.kv_article_first_gray_border_container}}
+        </div>
+        <div class="ui segment">
+          <div class="ui secondary segment">
+            <p>{{articleData.kv_article_first_white_container}}</p>
+          </div>
+        </div>
+        <h4 class="ui top attached header">
+          three-container-first-head
+        </h4>
+        <div class="ui attached segment">
+          <p>three-container-first-head-desc</p>
+        </div>
+        <h4 class="ui attached header">
+          three-container-second-head
+        </h4>
+        <div class="ui attached segment">
+          <p>three-container-second-head-desc</p>
+        </div>
+        <h4 class="ui attached header">
+          three-container-third-head
+        </h4>
+        <div class="ui attached segment">
+          <p>three-container-third-head-desc</p>
+        </div>
+        <div class="ui hidden divider"></div>
+        <div class="ui fluid bordered rounded image" width="100%">
+          <iframe width="100%" height="200px" src="{{articleData.kv_article_first_para_video_url}}">
+          </iframe>
+        </div>
+        <div class="ui hidden divider"></div>
+        <!-- <h2 class="ui center aligned icon header">
+          <i class="circular users icon"></i>
+          Friends
+        </h2>
+        <div class="ui hidden divider"></div> -->
+        <h4 class="ui horizontal divider header">
+          <i class="sort alphabet down icon"></i>
+          {{articleData.kv_article_divider_header_end}}
+        </h4>
+        <div>
+          <span class="left floated" style="margin-top:3px;">
+            Published on {{articleData.kv_article_publish_data}}
+          </span>
+          <span class="right floated" style="float: right;">
+            <img class="ui avatar image"
+              src="assets/img/{{articleData.kv_article_publisher_img}}">{{articleData.kv_article_publisher_name}}
+          </span>
+        </div>
+        <div class="ui hidden divider"></div>
+        <app-kv-related-articles></app-kv-related-articles>
       </div>
-      <app-kv-article-page></app-kv-article-page>
     </div>
   </div>
 </div>
